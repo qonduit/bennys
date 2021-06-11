@@ -1,0 +1,33 @@
+.banner-container {
+  display: flex;
+  top: 15%;
+  left: 0px;
+  width: 100%;
+  height: 42.5%;
+  position: absolute;
+  align-items: center;
+  font-size: 35px;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+}
+.menu-banner {
+  top: 57.5%;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  display: flex;
+  right: 10%;
+  color: white;
+  transition: 0.1s;
+}
+
+.banner-text:hover {
+  color: #0d4c6d;
+}
