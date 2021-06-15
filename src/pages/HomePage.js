@@ -7,33 +7,30 @@ import "../components/styling/global.css";
 class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.NavBar = React.createRef();
+    this.setDisplayViewState = this.setDisplayViewState.bind(this);
     this.state = {
-      displayView: "",
+      displayView: "homePage",
     };
   }
-  updateView = () => {
-    const currentNavBar = this.NavBar.current;
-    console.log(currentNavBar.state.view);
-    // if (this.state.currentNavBar === "homePage") {
-    //   this.setState({
-    //     displayView: (
-    //       <div>
-    //         <BannerAbout />
-    //         <BannerMenu />
-    //       </div>
-    //     ),
-    //   });
-    // }
+
+  setDisplayViewState = (newView) => {
+    this.setState({ displayView: newView });
   };
-  componentWillMount() {
-    this.updateView();
-  }
+
   render() {
+    let renderedView = <div></div>;
+    if (this.state.displayView === "homePage") {
+      renderedView = (
+        <div>
+          <BannerAbout setDisplayViewState={this.setDisplayViewState} />
+          <BannerMenu setDisplayViewState={this.setDisplayViewState} />
+        </div>
+      );
+    }
     return (
       <div>
-        <NavBar ref={this.NavBar} />
-        {this.state.displayView}
+        <NavBar setDisplayViewState={this.setDisplayViewState} />
+        {renderedView}
       </div>
     );
   }
