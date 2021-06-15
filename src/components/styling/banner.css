@@ -10,17 +10,19 @@
   border-bottom: 2px solid white;
   box-sizing: border-box;
 }
-.menu-banner {
+.about-banner {
   top: 57.5%;
 }
 
 .banner-image {
+  cursor: pointer;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .banner-text {
+  cursor: pointer;
   position: absolute;
   display: flex;
   right: 10%;

@@ -1,14 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import menuPhoto from "../static/fish.jpg";
 import "./styling/banner.css";
 
-const BannerMenu = () => {
-  return (
-    <div className="banner-container menu-banner">
-      <img src={menuPhoto} className="banner-image" alt="team" />
-      <div className="banner-text">MENU</div>
-    </div>
-  );
-};
+class BannerMenu extends Component {
+  render() {
+    return (
+      <div className="banner-container">
+        <img
+          src={menuPhoto}
+          className="banner-image"
+          alt="team"
+          onClick={() => this.props.setDisplayViewState("menu")}
+        />
+        <div
+          className="banner-text"
+          onClick={() => this.props.setDisplayViewState("menu")}
+        >
+          MENU
+        </div>
+      </div>
+    );
+  }
+}
 
 export default BannerMenu;

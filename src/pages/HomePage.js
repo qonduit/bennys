@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import NavBar from "../components/NavBar.js";
 import BannerAbout from "../components/BannerAbout.js";
 import BannerMenu from "../components/BannerMenu.js";
+import MenuBoard from "../components/MenuBoard.js";
 import "../components/styling/global.css";
 
 class HomePage extends Component {
@@ -24,6 +25,12 @@ class HomePage extends Component {
         <div>
           <BannerAbout setDisplayViewState={this.setDisplayViewState} />
           <BannerMenu setDisplayViewState={this.setDisplayViewState} />
+        </div>
+      );
+    } else if (this.state.displayView === "menu") {
+      renderedView = (
+        <div>
+          <MenuBoard />
         </div>
       );
     }

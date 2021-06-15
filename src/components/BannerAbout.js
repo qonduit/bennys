@@ -3,13 +3,9 @@ import teamPhoto from "../static/bennys-team.jpg";
 import "./styling/banner.css";
 
 class BannerAbout extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
-      <div className="banner-container">
+      <div className="banner-container about-banner">
         <img
           src={teamPhoto}
           className="banner-image"

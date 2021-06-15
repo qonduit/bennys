@@ -3,10 +3,6 @@ import "./styling/header.css";
 import logo from "../static/logo.svg";
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="header-container">
