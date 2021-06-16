@@ -7,8 +7,8 @@
   position: absolute;
   align-items: center;
   font-size: 35px;
+  border-top: 2px solid white;
   border-bottom: 2px solid white;
-  box-sizing: border-box;
 }
 .about-banner {
   top: 57.5%;

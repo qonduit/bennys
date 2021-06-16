@@ -8,8 +8,6 @@
   position: absolute;
   align-items: center;
   font-size: 35px;
-  border-bottom: 2px solid white;
-  box-sizing: border-box;
 }
 
 .header-navbar-logo {
