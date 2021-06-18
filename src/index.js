@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import HomePage from "./pages/HomePage.js";
+import App from "./pages/App.js";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomePage />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
