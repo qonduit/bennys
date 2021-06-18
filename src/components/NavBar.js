@@ -8,29 +8,15 @@ class NavBar extends Component {
     return (
       <div className="header-container">
         <Link to="/home" className="header-navbar-logo">
-          <img
-            src={logo}
-            className="header-navbar-logo"
-            alt="logo"
-            // onClick={() => this.props.setDisplayViewState("home")}
-          ></img>
+          <img src={logo} className="header-navbar-logo" alt="logo"></img>
         </Link>
         <div className="header-navbar-container">
           <Link className="header-navbar-element" to="/menu">
-            <div
-              className="header-navbar-element"
-              // onClick={() => this.props.setDisplayViewState("menu")}
-            >
-              MENU
-            </div>
+            <div className="header-navbar-element">MENU</div>
           </Link>
           <Link className="header-navbar-element" to="/contact">
-          <div
-            className="header-navbar-element"
-            // onClick={() => this.props.setDisplayViewState("contact")}
-          >
-            CONTACT
-          </div></Link>
+            <div className="header-navbar-element">CONTACT</div>
+          </Link>
         </div>
       </div>
     );

@@ -6,7 +6,6 @@ import "./styling/contact.css";
 class Contact extends Component {
   render() {
     return (
-      <div>
         <div className="contact-container">
           <img src={contactPhoto} className="contact-image" alt="contact" />
           <div className="contact-about-text">
@@ -30,7 +29,6 @@ class Contact extends Component {
             <div>Check us out on Facebook!</div>
           </a>
         </div>
-      </div>
     );
   }
 }

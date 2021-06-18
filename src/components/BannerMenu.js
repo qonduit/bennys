@@ -7,18 +7,12 @@ class BannerMenu extends Component {
   render() {
     return (
       <div className="banner-container">
-        <Link to="/menu" className="banner-image"><img
-          src={menuPhoto}
-          className="banner-image"
-          alt="team"
-          onClick={() => this.props.setDisplayViewState("menu")}
-        /></Link>
-        <Link to="/menu" className="banner-text"><div
-          className="banner-text"
-          onClick={() => this.props.setDisplayViewState("menu")}
-        >
-          MENU
-        </div></Link>
+        <Link to="/menu" className="banner-image">
+          <img src={menuPhoto} className="banner-image" alt="team" />
+        </Link>
+        <Link to="/menu" className="banner-text">
+          <div className="banner-text">MENU</div>
+        </Link>
       </div>
     );
   }

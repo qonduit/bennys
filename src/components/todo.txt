@@ -1,4 +1,1 @@
-1. Dynamic routing
 2. Menu visual functionality
-    - Adjust page swap animation
-3. OVERALL RESPONSIVE

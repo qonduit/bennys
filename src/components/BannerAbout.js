@@ -10,7 +10,7 @@ class BannerAbout extends Component {
         <Link to="/contact" className="banner-image">
           <img src={teamPhoto} className="banner-image" alt="team" />
         </Link>
-        <Link to="/contact" className="banner-image" className="banner-text">
+        <Link to="/contact" className="banner-text">
           <div className="banner-text">ABOUT</div>
         </Link>
       </div>
