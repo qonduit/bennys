@@ -1,0 +1,95 @@
+@keyframes render-container {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-container {
+  display: flex;
+  z-index: -1;
+  top: 15%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #141510;
+  animation-name: render-container;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  justify-content: space-between;
+  font-size: 2vw;
+  color: white;
+}
+
+.contact-image {
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-about-text {
+  position: absolute;
+  right: 10%;
+  left: 60%;
+  top: 3%;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  text-align: justify;
+}
+
+.facebook-logo {
+    width: 25%;
+}
+
+.phone-link{
+    display: flex;
+    color: rgb(81, 179, 81);
+    background-color: rgb(81, 179, 81);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 15%;
+    right: 15%;
+    bottom: 35%;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    text-align:center;
+    border-radius: 50px;
+
+
+}
+
+.facebook-link {
+    color: #4267B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25%;
+    height: 15%;
+    right: 15%;
+    bottom: 18%;
+    text-decoration: none;
+    background-color: #4267B2;
+    border-radius: 50px;
+    color: white;
+}
+a:hover {
+    transition: 0.3s;
+    color: grey;
+}
+a:active {
+    color: white;
+}
+
